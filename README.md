@@ -1,50 +1,87 @@
-# Welcome to your Expo app 👋
+# Personal Finance Management App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern and intuitive mobile application built with React Native and Expo for managing personal finances, tracking expenses, and maintaining budgets.
 
-## Get started
+## Features
 
-1. Install dependencies
+- 📊 **Dashboard**: Get a quick overview of your financial status
+- 📈 **Insights**: Analyze your spending patterns and financial trends
+- ➕ **Quick Add**: Easily add new transactions and expenses
+- 💰 **Budget Management**: Set and track your budgets
+- ⚙️ **Settings**: Customize your app preferences
 
-   ```bash
-   npm install
-   ```
+## Tech Stack
 
-2. Start the app
+- **Framework**: [React Native](https://reactnative.dev/)
+- **Navigation**: [Expo Router](https://docs.expo.dev/router/introduction/)
+- **UI Components**: 
+  - [@expo/vector-icons](https://docs.expo.dev/guides/icons/)
+  - [React Native Reanimated](https://docs.swmansion.com/react-native-reanimated/)
+  - [Expo Blur](https://docs.expo.dev/versions/latest/sdk/blur-view/)
+- **Development Platform**: [Expo](https://expo.dev/)
 
-   ```bash
-   npx expo start
-   ```
+## Prerequisites
 
-In the output, you'll find options to open the app in a
+- Node.js (LTS version recommended)
+- npm or yarn
+- Expo CLI
+- iOS Simulator (Mac only) or Android Emulator for local development
+- Expo Go app on your physical device for testing
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Installation
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+1. Clone the repository:
 ```bash
-npm run reset-project
+git clone [your-repository-url]
+cd personal_financ_management
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Learn more
+3. Start the development server:
+```bash
+npm start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## Available Scripts
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- `npm start` - Start the Expo development server
+- `npm run android` - Start the app on Android emulator
+- `npm run ios` - Start the app on iOS simulator
+- `npm run web` - Start the app in web browser
+- `npm run lint` - Run ESLint for code quality
+- `npm run reset-project` - Reset the project (custom script)
 
-## Join the community
+## Project Structure
 
-Join our community of developers creating universal apps.
+```
+personal_financ_management/
+├── app/                    # Main application code
+│   ├── (tabs)/            # Tab-based navigation
+│   └── ...                # Other app screens
+├── components/            # Reusable React components
+├── constants/             # App constants and configuration
+├── hooks/                # Custom React hooks
+├── assets/               # Static assets (images, fonts, etc.)
+└── ...
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Built with [Expo](https://expo.dev/)
+- Icons from [Ionicons](https://ionic.io/ionicons)
